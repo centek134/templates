@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Login form</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <main class="forms">
+        <div class="form login">
+          <h2 class="form title">Login</h2>
+          <form id="login-form" action="#">
+            <div class="input-field">
+              <input type="email" placeholder="Enter your email" required/>
+              <span class="icon email"></span>
+            </div>
+            <div class="input-field">
+              <input type="password" id="password-login" placeholder="Enter your password" required/>
+              <span id="eye-login" class="icon eye-slash"></span>
+              <span class="icon lock"></span>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck"/>
+                <label for="logCheck" class="text">Remember me</label>
+              </div>
+              <a class="text" href="#" title="forgot a password">Forgot password?</a>
+            </div>
+            <div class="input-field button">
+              <input type="submit" value="Login now"/>
+            </div>
+          </form>
+          <div class="register-now">
+            <span>Not a member?
+              <a id="member-register" href="#" title="Signup for membership">Register now!</a>
+            </span>
+          </div>
+        </div>
+        <!-- Registration form -->
+        <div class="form register">
+          <h2 class="form title">Register</h2>
+          <p class="error-text"></p>
+          <form id="register-form" action="#">
+            <div class="input-field">
+              <input name="username" type="text" title="Please enter your username" placeholder="Enter your username" required/>
+              <span class="icon user"></span>
+            </div>
+            <div class="input-field">
+              <input name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" title="Please use correct email address" type="email" title="Please enter your email" placeholder="Enter your email" required/>
+              <span class="icon email"></span>
+            </div>
+            <div class="input-field">
+              <input name="password" id="password" type="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?\W).{8,}$" title="Password must contain one digit, one lowercase letter, one uppercase letter, one special character, no space, and it must be at least 8 characters long" class="password-register" placeholder="Create your password" required/>
+              <span class="icon lock"></span>
+            </div>
+            <div class="input-field">
+              <input id="repeated-password" type="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?\W).{8,}$" title="Password must contain one digit, one lowercase letter, one uppercase letter, one special character, no space, and it must be at least 8 characters long" class="password-register" placeholder="Create your password" required/>
+              <span id="eye-register" class="icon eye-slash"></span>
+              <span class="icon lock"></span>
+            </div>
+            <p class="error-message"></p>
+            <div class="input-field button">
+              <input type="Submit" value="Register"/>
+            </div>
+          </form>
+          <div class="login-signup">
+            <span>Already an member?
+              <a id="member-login" href="#" title="Signup for membership">Login now!</a>
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
