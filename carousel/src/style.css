@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+.carousel{
+  position: relative;
+  max-width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel__list{
+  width: 100%;
+  height: 100%;
+}
+.carousel__list .item{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.item__content{
+  max-width: 350px;
+  padding-left: 70px;
+}
+.item__content .header{
+  font-size: 20px;
+}
+.item__content .subheader{
+  font-size: 16px;
+}
+.item__content .text{
+  font-size: 12px;
+}
+.carousel__button.prev, .carousel__button.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  z-index: 999;
+  cursor: pointer;
+  color: #000000b0;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+}
+.carousel__button.prev.--disabled, .carousel__button.next.--disabled{
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.carousel__button.prev{
+  left: 1%;
+}
+.carousel__button.next{
+  right: 1%;
+}
+.carousel__button.prev:hover, .carousel__button.next:hover, .carousel__button.prev:focus, .carousel__button.next:focus{
+  color: #fff;
+}
+.carousel__controls{
+  position: absolute;
+  top: calc(100% - 30px);
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 999;
+}
+.carousel__controls .controls__list{
+  list-style-type: none;
+}
+.carousel__controls .controls__list .dot{
+  display: inline-block;
+  margin: 0 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  background-color: #000000b0;
+  outline: none;
+}
+.carousel__controls .controls__list .dot:hover,.carousel__controls .controls__list .dot:focus{
+  background-color: #fff;
+}
+.carousel__controls .controls__list .dot.--active {
+  scale: 1.2;
+  background-color: #fff;
+}
+.--green{
+  background-color: #9bee94;
+}
+.--yellow{
+  background-color: #eeee94;
+}
+.--blue{
+  background-color: #94a4ee;
+}
+.--pink{
+  background-color: #ee94da;
+}
+.carousel__list .item:nth-of-type(1){
+  z-index: -100;
+  left: -100%;
+}
+.carousel__list .item:nth-of-type(2){
+  left: 0%;
+  z-index: 100;
+}
+.carousel__list .item:nth-of-type(3){
+  left: 100%;
+  z-index: 100;
+}
+.carousel__list .item:nth-of-type(4){
+  left: 200%;
+}
+@media screen and (max-width:600px) {
+  .item__content{
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+}

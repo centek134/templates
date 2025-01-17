@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="description" content="Carousel template">
+    <title>Carousel</title>
+  </head>
+  <body>
+    <section class="carousel">
+      <button title="button to previous slide" class="carousel__button prev"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-circle-left"><path fill="currentColor" d="M8.29,11.29a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l3,3a1,1,0,0,0,1.42-1.42L11.41,13H15a1,1,0,0,0,0-2H11.41l1.3-1.29a1,1,0,0,0,0-1.42,1,1,0,0,0-1.42,0ZM2,12A10,10,0,1,0,12,2,10,10,0,0,0,2,12Zm18,0a8,8,0,1,1-8-8A8,8,0,0,1,20,12Z"></path></svg></span></button>
+      <button title="button to next slide" class="carousel__button next"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-circle-right"><path fill="currentColor" d="M15.71,12.71a1,1,0,0,0,.21-.33,1,1,0,0,0,0-.76,1,1,0,0,0-.21-.33l-3-3a1,1,0,0,0-1.42,1.42L12.59,11H9a1,1,0,0,0,0,2h3.59l-1.3,1.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0ZM22,12A10,10,0,1,0,12,22,10,10,0,0,0,22,12ZM4,12a8,8,0,1,1,8,8A8,8,0,0,1,4,12Z"></path></svg></span></button>
+      <ul class="carousel__list">
+        <li data-slide-index="3" class="item --pink">
+          <div class="item__content">
+            <h3 class="header">Lorem Ipsum4</h3>
+            <h4 class="subheader">Lorem Ipsum</h4>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+        </li>
+        <li data-slide-index="0" class="item  --green">
+          <div class="item__content">
+            <h3 class="header">Lorem Ipsum1</h3>
+            <h4 class="subheader">Lorem Ipsum</h4>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+        </li>
+        <li data-slide-index="1" class="item --yellow">
+          <div class="item__content">
+            <h3 class="header">Lorem Ipsum2</h3>
+            <h4 class="subheader">Lorem Ipsum</h4>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+        </li>
+        <li data-slide-index="2" class="item --blue">
+          <div class="item__content">
+            <h3 class="header">Lorem Ipsum3</h3>
+            <h4 class="subheader">Lorem Ipsum</h4>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+        </li>
+      </ul>
+      <aside class="carousel__controls">
+        <div class="controls__list">
+          <button title="button to slide 1" data-slide-index="0" class="dot --active"></button>
+          <button title="button to slide 2" data-slide-index="1" class="dot"></button>
+          <button title="button to slide 3" data-slide-index="2" class="dot"></button>
+          <button title="button to slide 4" data-slide-index="3" class="dot"></button>
+        </div>
+      </aside>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
