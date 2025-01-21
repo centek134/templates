@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image left</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="wrapper">
+        <div class="item">
+          <div class="item__image --visible">
+              <img class="image" src="./src/assets/img.jpg" alt="image1">
+          </div>
+          <div class="item__text-content --active">
+            <div class="title-wrapp">
+              <span class="title__number">01</span>
+              <div class="text-wrapp">
+                <h4 class="title">Lorem ipsum</h4>
+                <div class="link-wrap">
+                  <a href="#" title="link">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__image">
+              <img class="image" src="./src/assets/img2.jpg" alt="image1">
+          </div>
+          <div class="item__text-content">
+            <div class="title-wrapp">
+              <span class="title__number">02</span>
+              <div class="text-wrapp">
+                <h4 class="title">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</h4>
+                <div class="link-wrap">
+                  <a href="#" title="link">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__image --visible">
+              <img class="image" src="./src/assets/img3.jpg" alt="image1">
+          </div>
+          <div class="item__text-content">
+            <div class="title-wrapp">
+              <span class="title__number">03</span>
+              <div class="text-wrapp">
+                <h4 class="title">Lorem ipsum Lorem ipsum Lorem ipsum</h4>
+                <div class="link-wrap">
+                  <a href="#" title="link">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="control-wrapp">
+          <button data-btn-number="0" class="control__btn"></button>
+          <button data-btn-number="1" class="control__btn"></button>
+          <button data-btn-number="2" class="control__btn"></button>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
