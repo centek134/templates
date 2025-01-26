@@ -9,9 +9,9 @@ nextButton.addEventListener("click", () => slideChange("next"));
 
 function slideChange(operation: "prev" | "next"){
   if( operation === "prev" ){
-    carouselList.prepend(carouselList.lastChild!)
+    carouselList.prepend(carouselList.lastElementChild!)
   };
   if( operation === "next" ){
-    carouselList.appendChild(carouselList.firstChild!)
+    carouselList.appendChild(carouselList.firstElementChild!)
   };
 }
